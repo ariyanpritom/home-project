@@ -1,0 +1,218 @@
+footer{
+
+    & .footer-top{
+        background-color: $color-grey-background-medium;
+        padding: 7.5rem;
+
+        & .footer-top-main{
+            height: 36.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            & .foot-box{
+                flex: 0 0 27rem;
+            }
+
+            & .foot-box-one{
+                height: 21.2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                & .heading-boost{
+                    color: $color-white;
+                    font-size: 1.6rem;
+                    font-weight: 900;
+                    font-family: $font-lato;
+                    text-transform: uppercase;
+                }
+
+                & .para-boost{
+                    color: $color-grey-text-light;
+                    font-size: 1.4rem;
+                }
+
+                & .button-boost{
+                    color: $color-grey-text-light;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                }
+            }
+
+            & .foot-box-two{
+                height: 21.2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                & .heading-point{
+                    color: $color-white;
+                    font-size: 1.6rem;
+                    font-weight: 900;
+                    font-family: $font-lato;
+                    text-transform: uppercase;
+                }
+
+                & .gallery-point{
+                    width: 25.5rem;
+                    height: 17.5rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-content: space-between;
+
+                    
+                }
+            }
+
+            & .foot-box-three{
+                height: 21.2rem;
+                display: flex;
+                flex-direction: column;
+                
+
+                & .heading-turbo{
+                    color: $color-white;
+                    font-size: 1.6rem;
+                    font-weight: 900;
+                    font-family: $font-lato;
+                    text-transform: uppercase;
+                }
+
+                & .para-turbo{
+                    color: $color-grey-text-light;
+                    font-size: 1.4rem;
+                    margin: 2.2rem 0rem;
+                }
+
+                .menu-turbo{
+
+                    & ul{
+                        margin: 0;
+                        padding: 0;
+
+                        & li{
+                            list-style: none;
+
+                            & a{
+                                text-decoration: none;
+                                font-size: 1.4rem;
+                                color: $color-grey-text-light;
+
+                                & i{
+                                    margin-right: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            & .foot-box-four{
+                height: 21.2rem;
+                display: flex;
+                flex-direction: column;
+
+                & .heading-turn{
+                    color: $color-white;
+                    font-size: 1.6rem;
+                    font-weight: 900;
+                    font-family: $font-lato;
+                    text-transform: uppercase;
+                }
+        
+                & .para-turn{
+                    color: $color-grey-text-light;
+                    font-size: 1.4rem;
+                    margin: 2.2rem 0rem;
+                }
+        
+                & .form-turn{
+                    width: 27rem;
+                    height: 4rem;
+                    background-color: #fff;
+                    position: relative;
+                    border-radius: .5rem;
+                    overflow: hidden;
+        
+                    & .mail{
+                        color: $color-placeholder;
+                        width: 100%;
+                        height: 100%;
+                        padding: 1.5rem;
+                        position: absolute;
+                        outline: none;
+                        top: 0;
+                        left: 0;
+                        font-size: 1.4rem;
+                        border: none;
+                        display: inline-block;
+                        
+                    }
+        
+                    & .submit{
+                        width: 8.8rem;
+                        height: 3rem;
+                        position: absolute;
+                        top: 50%;
+                        right: .5rem;
+                        transform: translate(0%, -50%);
+                        font-size: 1.3rem;
+                        font-weight: 700;
+                        color: $color-white;
+                        background-color: $color-button;
+                        border: none;
+                        outline: none;
+                        display: inline-block;
+                        text-transform: uppercase;
+        
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-down{
+        background-color: $color-grey-background-dark;
+
+        & .foot-pro{
+            height: 8.4rem;
+            color: $color-grey-text-medium;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & .copyright{
+                font-size: 1.4rem;
+            }
+
+            & .pro-nav{
+                
+                & ul{
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+
+                    & li{
+                        list-style: none;
+
+                        &:not(:last-child){
+                            margin-right: 2.4rem;
+                        }
+
+                        & a{
+                            color: $color-grey-text-medium;
+                            font-size: 1.4rem;
+                            text-decoration: none;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

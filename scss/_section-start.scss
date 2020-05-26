@@ -1,0 +1,59 @@
+.section-start {
+    margin: 13rem 0rem;
+
+    & .section-moon {
+        text-align: center;
+
+        & {
+            & .heading-moon {
+                font-size: 4.4rem;
+                color: $color-primary;
+                font-weight: 900;
+                font-family: $font-lato;
+                text-transform: capitalize;
+            }
+
+            & .para-moon {
+                font-size: 2.2rem;
+                margin: 4.2rem 0rem 8.5rem 0rem;
+            }
+        }
+    }
+
+    & .section-sun {
+
+        & .sun-one {
+            display: flex;
+
+            & .sun-one-left {
+                flex: 0 0 23%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+
+                & .icon {
+                    width: 5.7rem;
+                    height: 5.7rem;
+                    fill: $color-button;
+                }
+            }
+
+            & .sun-one-right {
+                flex: 0 0 77%;
+
+                & .heading-sun {
+                    font-size: 2.6rem;
+                    font-family: $font-lato;
+                    font-weight: 900;
+                    color: $color-primary;
+                    text-transform: capitalize;
+                    margin-bottom: 3rem;
+                }
+
+                & .para-sun {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
