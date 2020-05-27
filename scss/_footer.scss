@@ -39,6 +39,11 @@ footer{
                     font-weight: 700;
                     font-size: 1.5rem;
                     text-decoration: none;
+                    transition: .3s;
+
+                    &:hover{
+                        color: $color-button-hover;
+                    }
                 }
             }
 
@@ -97,13 +102,19 @@ footer{
                         & li{
                             list-style: none;
 
+                            &:hover a, &:hover i{
+                                color: $color-button;
+                            }
+
                             & a{
                                 text-decoration: none;
                                 font-size: 1.4rem;
                                 color: $color-grey-text-light;
+                                transition: .3s;
 
                                 & i{
                                     margin-right: 1.2rem;
+                                    transition: .3s;
                                 }
                             }
                         }
@@ -169,6 +180,12 @@ footer{
                         outline: none;
                         display: inline-block;
                         text-transform: uppercase;
+
+                        transition: .3s;
+
+                        &:hover{
+                            background-color: $color-button-hover;
+                        }
         
                     }
                 }
@@ -209,6 +226,12 @@ footer{
                             font-size: 1.4rem;
                             text-decoration: none;
                             text-transform: capitalize;
+
+                            transition: .3s;
+
+                            &:hover{
+                                color: $color-button-hover;
+                            }
                         }
                     }
                 }

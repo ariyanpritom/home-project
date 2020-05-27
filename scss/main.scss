@@ -18,19 +18,36 @@
     display: inline-block;
     width: 4rem;
     height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: $color-position;
     text-decoration: none;
     border-radius: .5rem;
     position: fixed;
     right: 2rem;
     bottom: 2.2rem;
+    transition: .3s;
+
+    &:hover{
+        background-color: $color-primary;
+    }
+
+    &:hover i{
+        color: $color-button;
+        top: 47%;
+    }
+
+    &:active i{
+        color: $color-white;
+        top: 50%;
+    }
 
     & i {
         font-size: 2.5rem;
         font-weight: 500;
         color: $color-middle-position;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s;
     }
 }

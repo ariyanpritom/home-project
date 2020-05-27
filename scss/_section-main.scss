@@ -3,6 +3,120 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+
+    &:hover .angel-left i, &:hover .angel-right i{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    & .angel-left{
+        width: 6rem;
+        height: 6rem;
+        position: relative;
+        transition: .3s;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 3rem;
+
+        &:hover{
+            background-color: $color-primary;
+            border-radius: .5rem;
+        }
+
+        &:hover i{
+            color: $color-button;
+        }
+
+        &:active i{
+            color: $color-white;
+        }
+
+        & i{
+            font-size: 4rem;
+            font-weight: 500;
+            color: $color-white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: .3s;
+            visibility: hidden;
+            opacity: 0;
+            transition: .3s;
+        }
+    }
+
+    & .angel-right{
+        width: 6rem;
+        height: 6rem;
+        position: relative;
+        transition: .3s;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 3rem;
+
+        &:hover{
+            background-color: $color-primary;
+            border-radius: .5rem;
+        }
+
+        &:hover i{
+            color: $color-button;
+        }
+
+        &:active i{
+            color: $color-white;
+        }
+
+        & i{
+            font-size: 4rem;
+            font-weight: 500;
+            color: $color-white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+            opacity: 0;
+            transition: .3s;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     & .mind-fixed {
         width: 100%;
@@ -43,6 +157,11 @@
                 display: inline-block;
                 text-transform: uppercase;
                 border-radius: .5rem;
+                transition: .3s;
+
+                &:hover{
+                    background-color: $color-button-hover;
+                }
 
             }
         }

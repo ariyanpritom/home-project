@@ -32,6 +32,10 @@
             border: .1rem solid #E6E9ED;
             border-radius: .5rem;
 
+            &:hover figcaption h3{
+                color: $color-button;
+            }
+
             figcaption {
                 text-align: center;
                 margin: 3.5rem 0rem;
@@ -41,6 +45,7 @@
                     color: $color-primary;
                     font-size: 2.0rem;
                     font-weight: 900;
+                    transition: .3s;
                 }
 
                 p {
@@ -75,9 +80,47 @@
                 display: inline-block;
                 background-color: $color-primary;
                 cursor: pointer;
+                margin-right: 1rem;
 
-                &:not(:last-child) {
+                &:nth-child(3){
+                    background-color: $color-button;
+                }
+            }
+
+            .bullet-mood{
+                width: 3rem;
+                height: 3rem;
+                background-color: $button-background;
+                border-radius: .5rem;
+                position: relative;
+                transition: .3s;
+                cursor: pointer;
+
+                &:not(:last-child){
                     margin-right: 1rem;
+                }
+
+                &:hover{
+                    background-color: $color-primary;
+                }
+
+                &:hover i{
+                    color: $color-button;
+                }
+
+                &:active i{
+                    color: $color-white;
+                }
+
+                & i{
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                    color: $color-white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: .3s;
                 }
             }
         }
